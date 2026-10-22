@@ -1,0 +1,11 @@
+model,type,accuracy,macro_f1,weighted_f1,train_time_s,inference_ms_per_sample,model_size_mb
+naive_bayes,model,0.6182,0.6213,0.6167,4.33,0.365,7.3
+logistic_regression,model,0.6267,0.6297,0.6245,9.68,0.338,4.71
+linear_svm,model,0.6375,0.6414,0.6373,6.03,0.41,9.88
+ablation (LR): word only,ablation,0.6159,0.6171,,1.93,,
+"ablation (LR): word only, no normalization",ablation,0.6114,0.6121,,2.43,,
+ablation (LR): char only,ablation,0.6335,0.6357,,6.94,,
+ablation (LR): word + char,ablation,0.6267,0.6297,,8.99,,
+"ablation (LR): word + char, no normalization",ablation,0.6253,0.6282,,8.6,,
+ablation (LR): word + char + NEG_ (after negator),ablation,0.626,0.6289,,8.09,,
+ablation (LR): word + char + NEG_ (both sides),ablation,0.6304,0.6332,,8.79,,

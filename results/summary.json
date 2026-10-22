@@ -1,0 +1,5 @@
+{
+  "best_model": "logistic_regression",
+  "test_macro_f1": 0.6297,
+  "test_accuracy": 0.6267
+}
