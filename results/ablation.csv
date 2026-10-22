@@ -1,8 +1,8 @@
 variant,features,normalization,negation,val_macro_f1,test_macro_f1,test_accuracy,train_time_s
-word only,word,True,off,0.6236,0.6149,0.6138,2.19
-"word only, no normalization",word,False,off,0.6227,0.612,0.6114,2.27
-char only,char,True,off,0.6376,0.6357,0.6335,8.95
-word + char,both,True,off,0.6388,0.6294,0.6264,7.66
-"word + char, no normalization",both,False,off,0.6372,0.6278,0.625,9.11
-word + char + NEG_ (after negator),both,True,after,0.6363,0.6312,0.6284,9.49
-word + char + NEG_ (both sides),both,True,both,0.6347,0.6323,0.6294,9.09
+word only,word,True,off,0.6236,0.6149,0.6138,2.07
+"word only, no normalization",word,False,off,0.6227,0.612,0.6114,2.44
+char only,char,True,off,0.6376,0.6357,0.6335,7.39
+word + char,both,True,off,0.6388,0.6294,0.6264,7.64
+"word + char, no normalization",both,False,off,0.6372,0.6278,0.625,8.74
+word + char + NEG_ (after negator),both,True,after,0.6363,0.6312,0.6284,8.96
+word + char + NEG_ (both sides),both,True,both,0.6347,0.6323,0.6294,9.1

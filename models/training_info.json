@@ -9,19 +9,19 @@
     "naive_bayes": {
       "best_param": 1.0,
       "val_macro_f1": 0.6056,
-      "train_time_s": 4.31,
+      "train_time_s": 4.32,
       "path": "naive_bayes.joblib"
     },
     "logistic_regression": {
       "best_param": 1.0,
       "val_macro_f1": 0.6388,
-      "train_time_s": 8.66,
+      "train_time_s": 8.95,
       "path": "logistic_regression.joblib"
     },
     "linear_svm": {
       "best_param": 0.1,
       "val_macro_f1": 0.6396,
-      "train_time_s": 5.92,
+      "train_time_s": 5.83,
       "path": "linear_svm.joblib"
     }
   },

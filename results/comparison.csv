@@ -1,11 +1,11 @@
 model,type,accuracy,macro_f1,weighted_f1,train_time_s,inference_ms_per_sample,model_size_mb
-naive_bayes,model,0.6186,0.6217,0.617,4.31,0.27,7.3
-logistic_regression,model,0.6264,0.6294,0.6242,8.66,0.267,4.72
-linear_svm,model,0.6365,0.6403,0.6362,5.92,0.269,9.89
-ablation (LR): word only,ablation,0.6138,0.6149,,2.19,,
-"ablation (LR): word only, no normalization",ablation,0.6114,0.612,,2.27,,
-ablation (LR): char only,ablation,0.6335,0.6357,,8.95,,
-ablation (LR): word + char,ablation,0.6264,0.6294,,7.66,,
-"ablation (LR): word + char, no normalization",ablation,0.625,0.6278,,9.11,,
-ablation (LR): word + char + NEG_ (after negator),ablation,0.6284,0.6312,,9.49,,
-ablation (LR): word + char + NEG_ (both sides),ablation,0.6294,0.6323,,9.09,,
+naive_bayes,model,0.6186,0.6217,0.617,4.32,0.275,7.3
+logistic_regression,model,0.6264,0.6294,0.6242,8.95,0.251,4.72
+linear_svm,model,0.6365,0.6403,0.6362,5.83,0.267,9.89
+ablation (LR): word only,ablation,0.6138,0.6149,,2.07,,
+"ablation (LR): word only, no normalization",ablation,0.6114,0.612,,2.44,,
+ablation (LR): char only,ablation,0.6335,0.6357,,7.39,,
+ablation (LR): word + char,ablation,0.6264,0.6294,,7.64,,
+"ablation (LR): word + char, no normalization",ablation,0.625,0.6278,,8.74,,
+ablation (LR): word + char + NEG_ (after negator),ablation,0.6284,0.6312,,8.96,,
+ablation (LR): word + char + NEG_ (both sides),ablation,0.6294,0.6323,,9.1,,
