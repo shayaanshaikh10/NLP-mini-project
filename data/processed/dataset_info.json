@@ -1,0 +1,13 @@
+{
+  "source": "SentiMix (SemEval-2020 Task 9, Hinglish)",
+  "is_demo": false,
+  "total_rows": 19675,
+  "label_counts": {
+    "neutral": 7354,
+    "positive": 6506,
+    "negative": 5815
+  },
+  "train": 13772,
+  "val": 2951,
+  "test": 2952
+}
