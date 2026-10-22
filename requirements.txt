@@ -1,0 +1,28 @@
+# ============================================================
+# HinglishSense - requirements
+# Install core:      pip install -r requirements.txt
+# ============================================================
+
+# ---------- Core (needed to run everything on a normal CPU laptop) ----------
+pandas>=2.0
+numpy>=1.24
+scikit-learn>=1.3
+joblib>=1.3
+regex>=2023.0
+emoji>=2.8
+matplotlib>=3.7
+seaborn>=0.13
+streamlit>=1.30
+pytest>=7.4
+requests>=2.31            # downloading the dataset
+huggingface_hub>=0.20     # searching / downloading datasets from Hugging Face
+nbformat>=5.9             # building the notebooks
+nbconvert>=7.0            # executing the demo notebook
+ipykernel>=6.0            # kernel used to run the notebook
+
+# ---------- Optional (only for transformer fine-tuning, needs a GPU) ----------
+# Uncomment these lines (or run them on Google Colab) to fine-tune XLM-RoBERTa.
+# torch>=2.1
+# transformers>=4.40
+# datasets>=2.18
+# accelerate>=0.28
