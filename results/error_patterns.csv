@@ -1,9 +1,9 @@
 pattern,share_of_test_set,share_of_errors,error_rate_when_present
-negation,0.342,0.394,0.43
-mixed_sentiment,0.073,0.076,0.391
-possible_sarcasm,0.038,0.042,0.414
-very_short_text,0.008,0.006,0.28
-many_unknown_words,0.059,0.064,0.405
-confusion: neutral <-> positive,,0.447,
-confusion: neutral <-> negative,,0.437,
-confusion: positive <-> negative,,0.115,
+negation,0.342,0.396,0.421
+mixed_sentiment,0.073,0.076,0.381
+possible_sarcasm,0.038,0.035,0.342
+very_short_text,0.008,0.007,0.28
+many_unknown_words,0.059,0.066,0.406
+confusion: neutral <-> positive,,0.452,
+confusion: neutral <-> negative,,0.434,
+confusion: positive <-> negative,,0.114,

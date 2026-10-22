@@ -24,6 +24,7 @@ import re
 
 import emoji
 import pandas as pd
+import regex  # like re, but understands Unicode classes such as \p{M}
 from sklearn.base import BaseEstimator, TransformerMixin
 
 from src import config
@@ -31,8 +32,9 @@ from src import config
 URL_PATTERN = re.compile(r"https?://\S+|www\.\S+")
 MENTION_PATTERN = re.compile(r"@\w+")
 ELONGATION_PATTERN = re.compile(r"(.)\1{2,}")  # a character repeated 3+ times
-# Split text into tokens: words (letters/digits/_/') or runs of punctuation ("!!")
-TOKEN_PATTERN = re.compile(r"[\w']+|[^\w\s]+")
+# Split text into tokens: words or runs of punctuation ("!!"). \p{M} keeps Hindi
+# vowel signs (matras) attached to their letters, so Devanagari words stay whole.
+TOKEN_PATTERN = regex.compile(r"[\w\p{M}']+|[^\w\p{M}\s]+")
 NON_WORD_PATTERN = re.compile(r"\W+")
 
 _normalization_cache = {}  # filled once by load_normalization_map()
