@@ -68,9 +68,18 @@ LR_MAX_ITER = 1000
 # ---------------------------------------------------------------------------
 # Preprocessing
 # ---------------------------------------------------------------------------
-# Words that flip the meaning of what follows them
-NEGATION_WORDS = ["nahi", "na", "mat", "never", "not", "no", "kabhi"]
-NEGATION_WINDOW = 2  # how many words after a negator get the NEG_ prefix
+# Words that flip the meaning of nearby words ("kabhi nahi" is covered by "nahi")
+NEGATION_WORDS = ["nahi", "na", "mat", "never", "not", "no", "don't", "can't"]
+NEGATION_WINDOW = 2  # how many words next to a negator get the NEG_ prefix
+# English puts the negator BEFORE the word ("not good") but Hindi usually puts
+# it AFTER ("accha nahi"). "after" marks the words after the negator (the brief's
+# rule), "both" marks words on both sides. Compared in the ablation study.
+NEGATION_SCOPES = ["after", "both"]
+
+# Common emojis mapped to an extra polarity token, so that rare emojis with the
+# same feeling share one strong feature (the emoji name is kept as well).
+POSITIVE_EMOJIS = "😀😁😂🤣😃😄😅😆😉😊😋😍😘🥰😎🤩🙂👍👏🙌💯🔥❤💕💖💗💓💞💘💛💚💙💜🎉✨🥳😻🙏"
+NEGATIVE_EMOJIS = "😞😟😠😡🤬😢😭😤😩😫😒🙄😔😕🙁☹😣😖👎💔🤮🤢😱😨😰😓"
 
 # ---------------------------------------------------------------------------
 # Optional transformer settings (used only when a GPU is available)
